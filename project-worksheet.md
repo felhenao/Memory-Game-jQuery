@@ -62,6 +62,15 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Component 1 | H | 10hrs| 12hrs | 12hrs |
 | Total |  | 10hrs| 12hrs | 12hrs |
 
+| buid a box |  high| 2 hours| idk| a lot|
+| Build frame and create the boxes where the game will me played | H | 2 | 30 m| <---|
+| Give it the minimum css styling | H | 1 | | <---|
+| Create a css class for the boxes that will be flashed | 30 |  | | <---|
+| link files | high | 15 |15 | 15|
+|  |  |  | | <---|
+|  |  |  | | <---|
+|  |  |  | | <---|
+
 ## Helper Functions
 Helper functions should be generic enought that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
 
