@@ -30,19 +30,19 @@ Include a full list of features that have been prioritized based on the `Time an
 ## Game Components
 
 ### Landing Page
-What will a player see when they start your game?
+Welcoming popup/window that instructs the user how to play the game
 
 ### Game Initialization
-What will a player see when the game is started?
+The user will see a container with 16 boxes of the same color inside of it and a start button above it.
 
 ### Playing The Game
-What will be the flow of the game, what will the user be expeted to do and what will the user expect from the gam
+Once the play button is clicked, 3 boxes from the container will be flashed using a color that differs from the other boxes. They will be flashed for 300ms and the container will rotate 90 degrees. Then it is the users turn to click on the estimated positioning of the flashed boxes. If the user is 100% accurate then level two will be activated and will be updated automatically. Once the user clicks the play button 4 boxes will be flashed this time. Each level increments the amount of boxes by one.
 
 ### Winning The Game
-What does it look like when the game ends, what determines winning or losing?
+There is no winning, only higher levels. The user looses after total failed attempts and will receive the final score
 
 ### Game Reset
-How will the user restart the game once it has been completed.
+By clicking the restart button the page will be refreshed
 
 ## MVP
 
@@ -53,11 +53,11 @@ Include the full list of features that will be part of your MVP
 Include the full list of features that you are considering for POST MVP
 ## Functional Components
 
-Based on the initial logic defined in the previous game phases section try and breakdown the logic further into functional components, and by that we mean functions.  Does your logic indicate that code could be encapsulated for the purpose of reusablility.  Once a function has been defined it can then be incorporated into a class as a method.
+Based on the initial logic defined in the previous game phases section try and breakdown the logic further into functional components, and by that we mean functions.  Does your logic indicate that code could be encapsulated for the purpose of reusability.  Once a function has been defined it can then be incorporated into a class as a method.
 
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted.
+Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evaluate game possibilities based on time needed and the actual time you have before game must be submitted.
 
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Create welcoming popup/window that instructs the user how to play the game | H | 35m |  | <---|
 | Build frame and create the boxes where the game will me played | H | 2h | 30m| <---|
@@ -65,7 +65,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Create play button | H | 20 | | <---|
 | Create a restart game function |  |  | | <---|
 | Create .flashDivs class for the boxes that will be flashed | 30 |  | | <---|
-| Link files | high | 15 |15 | 15|
+| Link files | H | 15 |15 | 15|
 | Create randomNumbers function that gives 3 random numbers used to flash 3 boxes on level 1 | H | 30m | | <---|
 | Create flashDivs function that uses randomNumbers() to to flash the boxes | H | 1.5h | | <---|
 | Create a getScore function that determines the score after the user submits the estimated position of the flashed boxes | H | 1h | | <---|
@@ -94,10 +94,6 @@ Helper functions should be generic enough that they can be reused in other appli
 | reStart() | To restart the game when the user fails to guess the flashed boxes |  
 | nextLevel() | updates the page to the next level (one extra flashed box) |  
 |  |  |  
-|  |  |  
-|  |  |  
-|  |  |  
-| Capitalize | This will capitalize the first letter in a string |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project.
