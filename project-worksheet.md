@@ -71,15 +71,12 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Create a getScore function that determines the score after the user submits the estimated position of the flashed boxes | H | 1h | | <---|
 | Flash the user score using getScore() function | H | 1h | | <---|
 | Create the reStart level function that is called if the user fails to guess the flashed boxes | H | 40m | | <---|
-| Create nextLevel() function that is used to increment the flashed boxes by one  |  |  | | <---|
+| Create nextLevel() function that is used to increment the flashed boxes by one  | H | 40m | | <---|
 | Create gameOver() function that ends the game after the user has failed 3 times and returns the score| H | 45m | | <---|
-|  |  |  | | <---|
-|  |  |  | | <---|
 |  |  |  | | <---|
 | Give the small boxes hover effect | M | 30m |  | <---|
 | Make the container div rotate 90 degrees | L | 30m | | <---|
-| Component 1 | H | 10hrs| 12hrs | 12hrs |
-| Total |  | 10hrs| 12hrs | 12hrs |
+| Total |  | hrs| hrs | hrs |
 
 
 ## Helper Functions
