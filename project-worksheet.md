@@ -39,18 +39,22 @@ The user will see a container with 16 boxes of the same color inside of it and a
 Once the play button is clicked, 3 boxes from the container will be flashed using a color that differs from the other boxes. They will be flashed for 300ms and the container will rotate 90 degrees. Then it is the users turn to click on the estimated positioning of the flashed boxes. If the user is 100% accurate then level two will be activated and will be updated automatically. Once the user clicks the play button 4 boxes will be flashed this time. Each level increments the amount of boxes by one.
 
 ### Winning The Game
-There is no winning, only higher levels. The user looses after total failed attempts and will receive the final score
+The user wins by reaching higher levels. The user looses after total failed attempts and will receive the final score
 
 ### Game Reset
 By clicking the restart button the page will be refreshed
 
 ## MVP
 
-Include the full list of features that will be part of your MVP
+- Welcoming page
+- Play button
+- Restart button
 
 ## POST MVP
 
-Include the full list of features that you are considering for POST MVP
+- Enhanced Css styling
+- The rotation of the container box
+- Option to choose higher levels
 ## Functional Components
 
 Based on the initial logic defined in the previous game phases section try and breakdown the logic further into functional components, and by that we mean functions.  Does your logic indicate that code could be encapsulated for the purpose of reusability.  Once a function has been defined it can then be incorporated into a class as a method.
@@ -76,7 +80,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 |  |  |  | | <---|
 | Give the small boxes hover effect | M | 30m |  | <---|
 | Make the container div rotate 90 degrees | L | 30m | | <---|
-| Total |  | hrs| hrs | hrs |
+| Total |  | hrs| 39hrs | hrs |
 
 
 ## Helper Functions
