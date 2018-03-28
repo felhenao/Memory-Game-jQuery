@@ -20,7 +20,7 @@ This schedule will be used to keep track of your progress throughout the week an
 Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
 
 ## Wireframes
-
+![wireframe](/wireframes/wireframe.jpg)
 Include images of your wireframes.
 
 ## Priority Matrix
@@ -59,9 +59,6 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Component 1 | H | 10hrs| 12hrs | 12hrs |
-| Total |  | 10hrs| 12hrs | 12hrs |
-
 | Create welcoming popup/window that instructs the user how to play the game | H | 35m |  | <---|
 | Build frame and create the boxes where the game will me played | H | 2h | 30m| <---|
 | Give it the minimum css styling | H | 1 | | <---|
@@ -78,8 +75,12 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Create gameOver() function that ends the game after the user has failed 3 times and returns the score| H | 45m | | <---|
 |  |  |  | | <---|
 |  |  |  | | <---|
+|  |  |  | | <---|
 | Give the small boxes hover effect | M | 30m |  | <---|
 | Make the container div rotate 90 degrees | L | 30m | | <---|
+| Component 1 | H | 10hrs| 12hrs | 12hrs |
+| Total |  | 10hrs| 12hrs | 12hrs |
+
 
 ## Helper Functions
 Helper functions should be generic enough that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
