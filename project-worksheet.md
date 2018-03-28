@@ -62,20 +62,43 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Component 1 | H | 10hrs| 12hrs | 12hrs |
 | Total |  | 10hrs| 12hrs | 12hrs |
 
-| buid a box |  high| 2 hours| idk| a lot|
-| Build frame and create the boxes where the game will me played | H | 2 | 30 m| <---|
+| Create welcoming popup/window that instructs the user how to play the game | H | 35m |  | <---|
+| Build frame and create the boxes where the game will me played | H | 2h | 30m| <---|
 | Give it the minimum css styling | H | 1 | | <---|
-| Create a css class for the boxes that will be flashed | 30 |  | | <---|
-| link files | high | 15 |15 | 15|
+| Create play button | H | 20 | | <---|
+| Create a restart game function |  |  | | <---|
+| Create .flashDivs class for the boxes that will be flashed | 30 |  | | <---|
+| Link files | high | 15 |15 | 15|
+| Create randomNumbers function that gives 3 random numbers used to flash 3 boxes on level 1 | H | 30m | | <---|
+| Create flashDivs function that uses randomNumbers() to to flash the boxes | H | 1.5h | | <---|
+| Create a getScore function that determines the score after the user submits the estimated position of the flashed boxes | H | 1h | | <---|
+| Flash the user score using getScore() function | H | 1h | | <---|
+| Create the reStart level function that is called if the user fails to guess the flashed boxes | H | 40m | | <---|
+| Create nextLevel() function that is used to increment the flashed boxes by one  |  |  | | <---|
+| Create gameOver() function that ends the game after the user has failed 3 times and returns the score| H | 45m | | <---|
 |  |  |  | | <---|
 |  |  |  | | <---|
-|  |  |  | | <---|
+| Give the small boxes hover effect | M | 30m |  | <---|
+| Make the container div rotate 90 degrees | L | 30m | | <---|
 
 ## Helper Functions
-Helper functions should be generic enought that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
+Helper functions should be generic enough that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
+
+
+
+
 
 | Function | Description |
-| --- | :---: |  
+| randomNumbers() | gives 3 random numbers used to flash boxes |  
+| start() | starts the game |  
+| rightOrWrong() |  |  
+| getScore() | This will calculate and store the score of the user |  
+| reStart() | To restart the game when the user fails to guess the flashed boxes |  
+| nextLevel() | updates the page to the next level (one extra flashed box) |  
+|  |  |  
+|  |  |  
+|  |  |  
+|  |  |  
 | Capitalize | This will capitalize the first letter in a string |
 
 ## Additional Libraries
