@@ -67,8 +67,8 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Build frame and create the boxes where the game will me played | H | 2h | 30m| <---|
 | Give it the minimum css styling | H | 1 | | <---|
 | Create play button | H | 20 | | <---|
-| Create a restart game function |  |  | | <---|
-| Create .flashDivs class for the boxes that will be flashed | 30 |  | | <---|
+| Create a restart game function | H | 45m |  | <---|
+| Create .flashDivs class for the boxes that will be flashed | H | 30m | | <---|
 | Link files | H | 15 |15 | 15|
 | Create randomNumbers function that gives 3 random numbers used to flash 3 boxes on level 1 | H | 30m | | <---|
 | Create flashDivs function that uses randomNumbers() to to flash the boxes | H | 1.5h | | <---|
