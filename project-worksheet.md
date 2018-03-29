@@ -66,22 +66,22 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Create welcoming popup/window that instructs the user how to play the game | H | 35m | 25m | <---|
 | Build frame and create the boxes where the game will me played | H | 2h | 30m| <---|
 | Give it the minimum css styling | H | 1hr | 1hr | <---|
-| Create play button | H | 20 | | <---|
+| Create play button | H | 20 | | 30|
 | Create a restart game function | H | 45m |  | <---|
-| Create .flashDivs class for the boxes that will be flashed | H | 30m | 10m | <---|
+| Create .flashDivs class for the boxes that will be flashed | H | 30m | 10m | 10m|
 | Link files | H | 15 |15 | 15|
 | Create helper global variables that can be used to identify each of the cells | H |  | | 1hr |
-| Create randomNumbers function that gives 3 random numbers used to flash 3 boxes on level 1 | H | 30m | | <---|
+| Create randomNumbers function that gives random numbers used to flash divs. The amount is determined by the level | H | 30m | | 1hr|
 | Create flashDivs function that uses randomNumbers() to to flash the boxes | H | 1.5h | | 1h|
 | Create a getScore function that determines the score after the user submits the estimated position of the flashed boxes | H | 1h | | <---|
 | Flash the user score using getScore() function | H | 1h | | <---|
-| Create the reStart level function that is called if the user fails to guess the flashed boxes | H | 40m | | <---|
+| Create the reStart level function that is called if the user fails to guess the flashed boxes | H | 50m | | <---|
 | Create nextLevel() function that is used to increment the flashed boxes by one  | H | 40m | | <---|
 | Create gameOver() function that ends the game after the user has failed 3 times and returns the score| H | 45m | | <---|
-| Make the buttons disappear when the boxes are flashed | L | 40m | | <---|
+| Make the buttons disappear when the boxes are flashed | L | 40m | | 20|
 | Give the small boxes hover effect | M | 30m |  | <---|
 | Make the container div rotate 90 degrees | L | 30m | | <---|
-| Total |  | 39hrs| 6hrs | hrs |
+| Total |  | 39hrs| 12hrs | hrs |
 
 
 ## Helper Functions
@@ -98,6 +98,7 @@ Helper functions should be generic enough that they can be reused in other appli
 | getScore() | This will calculate and store the score of the user |  
 | reStart() | To restart the game when the user fails to guess the flashed boxes |  
 | nextLevel() | updates the page to the next level (one extra flashed box) |  
+| flashDivs()  | adds random divs to an empty array, the number is determined by the level the use is in  |  
 |  |  |  
 
 ## Additional Libraries
