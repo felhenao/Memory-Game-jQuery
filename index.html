@@ -5,31 +5,67 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <script src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Press+Start+2P" rel="stylesheet">
+
   <script type="text/javascript" src="src/app.js"></script>
   <title>Memory Workout</title>
   <link rel="stylesheet" type="text/css" href="src/style.css">
 </head>
 <body>
+
+  <!-- <button>Restart</button> -->
+
+  <center>
+  <div class="buttons">
+    <button type="button" name="button">Play</button>
+    <button type="button" name="button">Replay</button>
+  </div>
+  </center>
+
 	<div class="container">
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
+    <div class="cube" value = "r1c1"></div>
+    <div class="cube" value = "r1c2"></div>
+    <div class="cube" value = "r1c3"></div>
+    <div class="cube" value = "r1c3"></div>
+    <div class="cube" value = "r2c1"></div>
+    <div class="cube" value = "r2c2"></div>
+    <div class="cube" value = "r2c3"></div>
+    <div class="cube" value = "r2c4"></div>
+    <div class="cube" value = "r3c1"></div>
+    <div class="cube" value = "r3c2"></div>
+    <div class="cube" value = "r3c3"></div>
+    <div class="cube" value = "r3c4"></div>
+    <div class="cube" value = "r4c1"></div>
+    <div class="cube" value = "r4c2"></div>
+    <div class="cube" value = "r4c3"></div>
+    <div class="cube" value = "r4c4"></div>
 
 	</div>
 
+  <form class="Welcome Message" action="index.html" method="post">
+
+    <h3>Memory Workout</h3>
+
+    <p>
+
+      Instructions:<br>
+
+      <ul>
+        <li>When you are ready to play the game just click on the play button and 3 boxes will be flashed. Try to remember the excact location of the boxes so you can click where the boxes were flashed</li>
+
+        <li>If you successfully remember the positioning of the boxes that were flashed without clicking on any wrong box then you can pass to the next level where the amount of flashed will be incremented by one</li>
+
+        <li>If you click on the wrong box(es) then you have to try again by clicking on the play button again</li>
+
+        <li>If you fail to click on all the flashed boxes three times then you loose the game</li>
+
+        <li>If you wish to play again just click the "Play again button". Have fun!</li>
+
+      </ul>
+
+    </p>
+
+  </form>
 
 </body>
 </html>

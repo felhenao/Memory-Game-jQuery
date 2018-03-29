@@ -1,19 +1,52 @@
 
 body{
-background-color: black;
+	background-color: black;
 }
+
+button {
+	background-color: black;
+	padding: 15px;
+	margin: 4px;
+	border-radius: 10px;
+	border: 3px solid black;
+	font-weight: bold;
+	font-size: 35px;
+	color: lime;
+	font-family: 'Noto Sans', sans-serif;
+	font-family: 'Press Start 2P', cursive;
+	background-size: cover;
+}
+
+button:hover {
+	color: green;
+}
+
+.buttons{
+	/* margin-left: 45%; */
+	padding-top: 7%;
+
+}
+
 .container {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(4, 1fr);
-	margin: 70px auto;
-	border: 20px solid black;
-	width: 400px;
-	height: 400px;
-	padding: 30px;
+	margin: 100px auto;
+	border: 20px solid orange;
+	width: 300px;
+	height: 300px;
+	padding: 20px;
 }
-d
+
 .cube {
 	border: 3px solid black;
 	background-color: grey;
+}
+
+.cube:hover{
+	background-color: : green;
+}
+
+.flashDivs{
+	background-color: lime;
 }

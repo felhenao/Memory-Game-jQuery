@@ -63,12 +63,12 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Create welcoming popup/window that instructs the user how to play the game | H | 35m |  | <---|
+| Create welcoming popup/window that instructs the user how to play the game | H | 35m | 25m | <---|
 | Build frame and create the boxes where the game will me played | H | 2h | 30m| <---|
-| Give it the minimum css styling | H | 1 | | <---|
+| Give it the minimum css styling | H | 1hr | 1hr | <---|
 | Create play button | H | 20 | | <---|
 | Create a restart game function | H | 45m |  | <---|
-| Create .flashDivs class for the boxes that will be flashed | H | 30m | | <---|
+| Create .flashDivs class for the boxes that will be flashed | H | 30m | 10m | <---|
 | Link files | H | 15 |15 | 15|
 | Create randomNumbers function that gives 3 random numbers used to flash 3 boxes on level 1 | H | 30m | | <---|
 | Create flashDivs function that uses randomNumbers() to to flash the boxes | H | 1.5h | | <---|
@@ -78,9 +78,10 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Create nextLevel() function that is used to increment the flashed boxes by one  | H | 40m | | <---|
 | Create gameOver() function that ends the game after the user has failed 3 times and returns the score| H | 45m | | <---|
 |  |  |  | | <---|
+| Make the buttons disappear when the boxes are flashed | L | 40m | | <---|
 | Give the small boxes hover effect | M | 30m |  | <---|
 | Make the container div rotate 90 degrees | L | 30m | | <---|
-| Total |  | hrs| 39hrs | hrs |
+| Total |  | 39hrs| 3hrs | hrs |
 
 
 ## Helper Functions
