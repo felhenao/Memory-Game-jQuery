@@ -70,18 +70,18 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Create a restart game function | H | 45m |  | <---|
 | Create .flashDivs class for the boxes that will be flashed | H | 30m | 10m | <---|
 | Link files | H | 15 |15 | 15|
+| Create helper global variables that can be used to identify each of the cells | H |  | | 1hr |
 | Create randomNumbers function that gives 3 random numbers used to flash 3 boxes on level 1 | H | 30m | | <---|
-| Create flashDivs function that uses randomNumbers() to to flash the boxes | H | 1.5h | | <---|
+| Create flashDivs function that uses randomNumbers() to to flash the boxes | H | 1.5h | | 1h|
 | Create a getScore function that determines the score after the user submits the estimated position of the flashed boxes | H | 1h | | <---|
 | Flash the user score using getScore() function | H | 1h | | <---|
 | Create the reStart level function that is called if the user fails to guess the flashed boxes | H | 40m | | <---|
 | Create nextLevel() function that is used to increment the flashed boxes by one  | H | 40m | | <---|
 | Create gameOver() function that ends the game after the user has failed 3 times and returns the score| H | 45m | | <---|
-|  |  |  | | <---|
 | Make the buttons disappear when the boxes are flashed | L | 40m | | <---|
 | Give the small boxes hover effect | M | 30m |  | <---|
 | Make the container div rotate 90 degrees | L | 30m | | <---|
-| Total |  | 39hrs| 3hrs | hrs |
+| Total |  | 39hrs| 6hrs | hrs |
 
 
 ## Helper Functions
