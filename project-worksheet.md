@@ -78,10 +78,10 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Create the reStart level function that is called if the user fails to guess the flashed boxes | H | 50m | | <---|
 | Create nextLevel() function that is used to increment the flashed boxes by one  | H | 40m | | <---|
 | Create gameOver() function that ends the game after the user has failed 3 times and returns the score| H | 45m | | <---|
-| Make the buttons disappear when the boxes are flashed | L | 40m | | 20|
-| Give the small boxes hover effect | M | 30m |  | <---|
+| Make the buttons disappear when the boxes are flashed | L | 40m | | 20m|
+| Give the small boxes hover effect | M | 30m |  | 30m|
 | Make the container div rotate 90 degrees | L | 30m | | <---|
-| Total |  | 39hrs| 12hrs | hrs |
+| Total |  | 39hrs| 14hrs | hrs |
 
 
 ## Helper Functions
