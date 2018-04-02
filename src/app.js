@@ -6,18 +6,17 @@ $(document).ready(function() {
 	let clickedDivs = [];
 	// to store the boxes that the user clicked on
 
-	let divsToFlash = 4;
+	let divsToFlash = 3;
 	  // the amount of boxes that are going to be flashed
-
-	let passLevel = false;
 
 	let matchingDivs = [];
 	  // to store the clicked divs that match with the flashed divs
 
-	let failedAttemts = 0;
+	let failedAttempts = 0;
 	// this keeps track and decides when the user looses
 
 	let currentLevel = 1;
+	// if the user meets the criteria to pass to next level then currentLevel variable will be increased by one
 
 	let $r1c1 = $('.r1c1');
 	let $r1c2 = $('.r1c2');
@@ -43,70 +42,81 @@ $(document).ready(function() {
 		clickedDivs.push($(this));
 		$(this).addClass('flashDivs');
 		rightOrWrong();
-		console.log(matchingDivs.length);
 	});
-
-
 	// the boxes that the user clicks on are added to clickedDivs array, the .flashDivs  class is added to color the clicked boxes, and the rightOrWrong function is called to check the accuracy of the users guesses
 
 	$('#playB').on('click', flashDivs);
 	// When the user clicks on the play button, random boxes change color
 
+	$('button.letsStart').on('click', function () {
+		let userName = $('input').val();
+		let welcomeMessage = $('.dialog');
+		welcomeMessage.text(`Hi ${userName}!`) ;
+		$('.dropSection').css('visibility', 'hidden');
+		setTimeout(function() {
+      welcomeMessage.text(`Level ${currentLevel}`)
+		}, 1500);
+	});
+	// this controls the button from the welcome page. Once the "Let's start" button is clicked  the welcome page/section hides and the user is greeted using the name/nickname inputted
+
 	function randomNums () {
-		for(let i = 0; i < divsToFlash; i++){
-			let  randomNum = Math.floor(Math.random() * cubes.length);
+		for(let i = 0; i <= divsToFlash; i++){
+			let  randomNum = Math.floor(Math.random() * cubes.length );
 			divs.push(cubes[randomNum]);
 			$(cubes[randomNum]).addClass('flashDivs');
-			$('.container').css('transform', 'rotate(90deg)');
 		}
-	}
+	};
 	// adds random divs to an empty array (divs), the number is determined by the level the use is in, the .flashDivs class is added to color the flashed divs
 
 	function flashDivs() {
 
-		randomNums(divsToFlash);
+		randomNums();
+		// to run the randomNums() function with divsToFlashas parameter to indicate the amount of boxes to flash according to the current level
 
 		$('button').css('color', 'black');
-		setTimeout(classRemover, 700);
+		$('.dialog').css('color', 'black')
+		setTimeout(() => {
+			classRemover();
+			$('.container').css('transform', 'rotate(90deg)');
+		}, 700);
 	}
+  // this makes everything on the screen disapear but the container box so the user is not distracted by anything else on the screen and the container rotates 90 degrees
 
 	function classRemover(){
 		$('.cube').removeClass('flashDivs');
 		$('button').css('color', 'lime');
+		$('.dialog').css('color', 'purple');
 	}
 	// .flashDivs makes the boxes appear by giving them a lime color. the buttons disapear when the boxes flash to avoid distractions
 	//
 	function rightOrWrong() {
 
-		if (clickedDivs.length > divsToFlash){
-			console.log('wrong');
-			failedAttemts +=1;
-			// break;
-		} if (matchingDivs.length === divsToFlash) {
-			ifRight();
-		} if (clickedDivs.length === divs.length) {
-			// console.log(matchingDivs.length);
 			for (let i = 0; i < divs.length; i++) {
 				// iterate through the flashed divs
-				for(let b = 0; b < clickedDivs.length; b++){
 					// to look for matches between the clicked and the flashed divs
-          // if (clickedDivs[b].data('value') !== divs[i].data('value')){
-					//
-					// }
-					if (clickedDivs[b].data('value') === divs[i].data('value')){
-						 matchingDivs.push(clickedDivs[b]);
+
+					if (clickedDivs[clickedDivs.length -1].data('value') === divs[i].data('value')){
+						 matchingDivs.push(clickedDivs[clickedDivs.length -1]);
+						 console.log('matched!');
 					}
-				}
+			}
+
+		if (clickedDivs.length === divs.length) {
+
+			if (matchingDivs.length === divs.length) {
+				ifRight();
+				console.log('ha');
+
+			} else {
+				ifWrong();
 			}
 		}
 	}
 
 	function ifRight() {
 		divsToFlash += 1;
-		classRemover();
-		matchingDivs = [];
-		divs = [];
 		currentLevel += 1;
+		clearContainer();
 		setTimeout(function () {
 			$('.dialog').text(`Level ${currentLevel}`);
 		}, 2000);
@@ -114,5 +124,30 @@ $(document).ready(function() {
 	}
 	// If the user is right about all the guesses and meets the criteria to pass to the next level
 
+	function ifWrong() {
+		failedAttempts += 1;
+		clearContainer();
+
+		if (failedAttempts === 3){
+			$('.dialog').text("Game Over, try again!");
+			failedAttempts = 0;
+			currentLevel = 1;
+
+			setTimeout(function () {
+			$('.dialog').text(`Level ${currentLevel}`);
+		}, 2000);
+// this displays the level 1  so the user has the option to play again
+		}
+	}
+	 // if the user makes the wrong guess
+
+	function clearContainer() {
+		classRemover();
+		matchingDivs = [];
+		divs = [];
+		clickedDivs = [];
+	}
+	// This will be used when the user passes to the next level or looses the game
+// clearContainer();
 
 });

@@ -8,7 +8,7 @@ body{
 	font-family: 'Noto Sans', sans-serif;
 	font-family: 'Press Start 2P', cursive;
 	text-align: center;
-	font-size: 85px;
+	font-size: 45px;
 }
 /* to communicate with the user and display messages */
 
@@ -45,6 +45,7 @@ button:hover {
 	width: 300px;
 	height: 300px;
 	padding: 20px;
+	transition: 1s all;
 }
 
 .cube {
@@ -64,27 +65,50 @@ button:hover {
 	background-color: red;
 }
 
-.dropWelcome{
-  width: 48%;
+.dropSection{
+  width: 80%;
   background-color: black;
-  opacity: 0.8;
+  opacity: 0.9;
   color: white;
-  padding: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
+  padding: 40px;
   font-family: arial;
   font-size: 20pt;
   animation: intro 2s;
   border-radius: 25px;
+	border: 6px solid yellow;
+	visibility: visible;
+	top: 5%;
+	left: 9%;
+	position: absolute;
+	margin: 0 auto;
+	/* height: 49%; */
 }
+/* the section that contains the welcome page */
 
 @keyframes intro {
   0%{
     transform: translateY(-900px);
   }
   100%{
-    transform: translateY(0);
+    transform: translateY(0%);
   }
 }
 /* to drop down the section that shows the welcoming message when the page loads */
+
+input {
+	font-weight: bold;
+	font-size: 25px;
+	width: 170px;
+	text-align: center;
+	font-family: arial;
+}
+/* Where the user types the name */
+
+hr{
+	border-width: 6px;
+}
+
+.letsStart{
+
+}
+/* the button at the bottom of the welcome page */
