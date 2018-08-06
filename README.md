@@ -1,6 +1,5 @@
-# Change-Calculator
-This app could be used in a cash register. When the item price is inputted, along with the bill used to pay, this calculator outputs the exact amount of bills and coins needed to make change.
-
+# Short term memory game
+This game works by flashing (changing color) briefly some of the boxes from the grid then the grid rotates (to add difficulty). The player has to remember which boxes were flashed to then click on them.
 
 ## Landing page
 <img src="./images/landing.png" />
