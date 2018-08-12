@@ -48,7 +48,7 @@ $(document).ready(function() {
 	$('#playB').on('click', flashDivs);
 	// When the user clicks on the play button, random boxes change color
 
-	function  greet () {
+	function greet () {
 		let userName = $('input').val();
 		let welcomeMessage = $('.dialog');
 		welcomeMessage.text(`Hi ${userName}!`) ;
@@ -61,9 +61,9 @@ $(document).ready(function() {
 	document.querySelector('.inputBox').addEventListener('keypress', function (e) {
 		let key = e.which || e.keyCode;
 		if(key === 13) {
-greet(e);
+			greet();
 		}
-	}))//input box at the landing page
+	})//input box at the landing page
 
 
 	$('button.letsStart').on('click', greet);
