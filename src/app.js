@@ -48,15 +48,25 @@ $(document).ready(function() {
 	$('#playB').on('click', flashDivs);
 	// When the user clicks on the play button, random boxes change color
 
-	$('button.letsStart').on('click', function () {
+	function  greet () {
 		let userName = $('input').val();
 		let welcomeMessage = $('.dialog');
 		welcomeMessage.text(`Hi ${userName}!`) ;
 		$('.dropSection').css('visibility', 'hidden');
 		setTimeout(function() {
-      welcomeMessage.text(`Level ${currentLevel}`)
+			welcomeMessage.text(`Level ${currentLevel}`)
 		}, 1500);
-	});
+	}
+
+	document.querySelector('.inputBox').addEventListener('keypress', function (e) {
+		let key = e.which || e.keyCode;
+		if(key === 13) {
+greet(e);
+		}
+	}))//input box at the landing page
+
+
+	$('button.letsStart').on('click', greet);
 	// this controls the button from the welcome page. Once the "Let's start" button is clicked  the welcome page/section hides and the user is greeted using the name/nickname inputted
 
 	function randomNums () {
