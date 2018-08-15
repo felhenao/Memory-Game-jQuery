@@ -53,11 +53,11 @@ button:hover {
 	background-color: grey;
 }
 
-.cube:hover{
+.cube:hover {
 	background-color: green;
 }
 
-.flashDivs{
+.flashDivs {
 	background-color: lime;
 }
 
@@ -65,7 +65,7 @@ button:hover {
 	background-color: red;
 }
 
-.dropSection{
+.dropSection {
   width: 80%;
   background-color: black;
   opacity: 0.9;
